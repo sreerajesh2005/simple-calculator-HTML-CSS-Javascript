@@ -1,0 +1,103 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #050505;
+    color: #08f73b;
+    font-family: "consolas",sans-serif;
+}
+.h1{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: alternate
+    typing 2s ,
+    cursor .4s step-end infinite alternate;
+
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0 }
+}
+\end{code}
+
+
+.container
+{
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    outline-color: #ff6a2f;
+    position: relative;
+    max-width:fit-content;
+    background-color: rgb(20, 20, 19);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+
+}
+.display{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000000;
+    font-family: "consolas",sans-serif;
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #08f73b;
+}
+.operator {
+    color: #ff6a2f;
+   font-weight: bolder;
+   font-family: sans-serif,"consolas";
+   
+  }
+
+ .number{
+    color: #08f73b;
+    font size: 3em;
+    font-weight: bolder;
+ }
+.buttons{
+    grid-gap :10px;
+    padding: 20px;
+    flex-direction: column;
+    row-gap: 1.5em;
+   font-size: 3rem;
+    grid-template-rows: repeat(6, 1fr);
+}
+   
+
+
+.buttons button{
+    width: 5.7em;
+  height: 5.7em;
+    column-gap: 1.5em;
+    font-style: inherit;
+    border-radius: 28px;
+    background-color: #0a0606;;
+    box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+      #1d1c1c 1.5px 1.5px 2px 0px inset, #353434 -3.2px -3.2px 8px 0px inset;
+      cursor: pointer;
+      font-family: sans-serif,"consolas";
+      transition: 0.1s ease-in-out;
+    }
+
+
+.buttons button:active{
+transform: scale3d(0.099);
+}
